@@ -1,0 +1,11 @@
+.stack {
+  margin: 0;
+  padding: 65px 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stack__icon {
+  width: 48px;
+  height: 48px;
+}
