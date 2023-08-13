@@ -1,0 +1,44 @@
+.projects-card {
+	width: 100%;
+	margin: 0;
+	background-color: #f3f3f3;
+	overflow: hidden;
+}
+
+.projects-card__image {
+	width: 100%;
+}
+
+.projects-card__link {
+	text-decoration: none;
+}
+
+.projects-card__link:hover {
+	width: 100%;
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.projects-card__desc {
+	padding: 50px 45px 20px;
+}
+
+.projects-card__title {
+	margin: 0 0 12px;
+	font-family: 'Sofia Sans';
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 42px;
+}
+
+.projects-card__text {
+	margin: 0;
+	max-width: 265px;
+	min-height: 54px;
+	font-family: 'Golos Text';
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px;
+}

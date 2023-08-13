@@ -1,13 +1,9 @@
 import './Button.css';
 
 export const Button = ({ text, handleClick }) => {
-
-  return (
-		<button 
-      className="button"
-      onClick={handleClick}
-    >
-      {text}
-    </button>
-  )
+	return (
+		<button className="button" onClick={handleClick}>
+			{text}
+		</button>
+	);
 };

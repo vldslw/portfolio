@@ -1,9 +1,5 @@
 import './Skills.css';
 
 export const Skills = () => {
-
-  return (
-		<div>
-    </div>
-  )
+	return <div></div>;
 };

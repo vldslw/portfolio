@@ -7,17 +7,16 @@ import { Projects } from '../../components/Projects/Projects';
 import { Footer } from '../../components/Footer/Footer';
 
 export const HomePage = () => {
-
-  return (
+	return (
 		<div className="page">
-      <Header />
-      <main class="content">
-        <Cover />
-        <Stack />
-        <Skills />
-        <Projects />
-      </main>
-      <Footer />
-    </div>
-  )
+			<Header />
+			<main class="content">
+				<Cover />
+				<Stack />
+				<Skills />
+				<Projects />
+			</main>
+			<Footer />
+		</div>
+	);
 };
