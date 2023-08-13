@@ -1,91 +1,91 @@
 .cover {
-  padding: 78px 100px;
-  display: flex;
-  justify-content: space-between;
+	padding: 78px 100px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .cover__desc-subhead {
-  margin: 32px 0;
-  max-width: 244px;
-  font-family: 'Sofia Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
+	margin: 32px 0;
+	max-width: 244px;
+	font-family: 'Sofia Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 .cover__desc-head {
-  margin: 42px 0;
-  max-width: 464px;
-  font-family: 'Sofia Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 100px;
+	margin: 42px 0;
+	max-width: 464px;
+	font-family: 'Sofia Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 100px;
 }
 
 .cover__desc-text {
-  margin: 42px 0 75px;
-  max-width: 418px;
-  font-family: 'Golos Text';
+	margin: 42px 0 75px;
+	max-width: 418px;
+	font-family: 'Golos Text';
 	font-style: normal;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 27px;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 27px;
 }
 
 .cover__pic-block {
-  position: relative;
-  width: 410px;
-  height: 550px;
+	position: relative;
+	width: 410px;
+	height: 550px;
 }
 
 .cover__pic {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 410px;
-  height: 550px;
-  object-fit: cover;
-  border-radius: 205px 205px 0px 0px;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 410px;
+	height: 550px;
+	object-fit: cover;
+	border-radius: 205px 205px 0px 0px;
 }
 
 .cover__rec {
-  width: 130px;
-  height: 130px;
-  position: absolute;
-  z-index: 2;
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	z-index: 2;
 }
 
 .cover__rec_top {
-  background-color: #FF6250;
-  right: 0;
-  top: -20px;
-  border-radius: 50%;
+	background-color: #ff6250;
+	right: 0;
+	top: -20px;
+	border-radius: 50%;
 }
 
 .cover__rec_bottom {
-  background-color: #F7D684;
-  left: -63px;
-  top: 350px;
+	background-color: #f7d684;
+	left: -63px;
+	top: 350px;
 }
 
 .cover__rotator {
-  position: absolute;
-  background-color: #2f80ed;
-  height: 300px;
-  width: 300px;
-  z-index: 0;
-  top: 260px;
-  left: -10px;
-  animation: rotation 30s linear infinite;
+	position: absolute;
+	background-color: #2f80ed;
+	height: 300px;
+	width: 300px;
+	z-index: 0;
+	top: 260px;
+	left: -10px;
+	animation: rotation 30s linear infinite;
 }
 
 @keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }

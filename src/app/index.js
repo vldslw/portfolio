@@ -2,7 +2,7 @@ import './index.css';
 import { Routing } from '../pages/index';
 
 function App() {
-    return <Routing />;
+	return <Routing />;
 }
 
 export default App;
