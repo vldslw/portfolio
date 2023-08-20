@@ -1,0 +1,33 @@
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 80px;
+}
+
+.contact-form__input {
+	min-width: 530px;
+	outline: none;
+	border: 0;
+	background-color: #f3f3f3;
+	padding: 24px 33px 19px;
+	margin: 0 0 18px;
+	font-family: 'Golos Text';
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.contact-form__message {
+	min-width: 530px;
+	outline: none;
+	border: 0;
+	background-color: #f3f3f3;
+	padding: 33px 33px 28px;
+	margin: 0 0 44px;
+	font-family: 'Golos Text';
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px;
+}
