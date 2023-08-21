@@ -10,12 +10,28 @@
 	border: 0;
 	background-color: #f3f3f3;
 	padding: 24px 33px 19px;
-	margin: 0 0 18px;
+	margin: 0;
 	font-family: 'Golos Text';
 	font-size: 17px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 27px;
+	border: 1px solid #f3f3f3;
+}
+
+.contact-form__input_error {
+	border: 1px solid #f3afa8;
+}
+
+.contact-form__span-error {
+	min-height: 16px;
+	padding: 4px 0 2px;
+	color: #ff6250;
+	font-family: 'Golos Text';
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
 }
 
 .contact-form__message {
@@ -30,4 +46,9 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 27px;
+	border: 1px solid #f3f3f3;
+}
+
+.contact-form__message_error {
+	border: 1px solid #f3afa8;
 }

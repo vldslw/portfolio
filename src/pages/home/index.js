@@ -10,7 +10,7 @@ export const HomePage = () => {
 	return (
 		<div className="page">
 			<Header />
-			<main class="content">
+			<main className="content">
 				<Cover />
 				<Stack />
 				<Skills />

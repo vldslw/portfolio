@@ -1,62 +1,80 @@
 import './ContactForm.css';
 import { useState } from 'react';
 import { Button } from '../Button/Button';
+import { submitContact } from '../../utils/api/contact';
+import { useFormValidation } from '../../utils/hooks/useFormValidation';
 
 export const ContactForm = () => {
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
-	const [message, setMessage] = useState('');
-
-	function handleNameChange(e) {
-		setName(e.target.value);
-	}
-
-	function handleEmailChange(e) {
-		setEmail(e.target.value);
-	}
-
-	function handleMessageChange(e) {
-		setMessage(e.target.value);
-	}
+	const { values, handleChange, errors, isValid, resetForm } =
+		useFormValidation();
+	const [isNameTouched, setIsNameTouched] = useState(false);
+	const [isEmailTouched, setIsEmailTouched] = useState(false);
+	const [isMessageTouched, setIsMessageTouched] = useState(false);
+	const [isButtonTouched, setIsButtonTouched] = useState(false);
 
 	function handleSubmit(e) {
 		e.preventDefault();
+		submitContact({
+			name: values.name,
+			email: values.email,
+			message: values.message,
+		});
+		resetForm();
 	}
 
 	return (
 		<form className="contact-form" onSubmit={handleSubmit} name="contact-form">
+			<span className="contact-form__span-error">
+				{isNameTouched && errors.name !== '' && errors.name}
+			</span>
 			<input
 				type="text"
-				value={name ?? ''}
-				onChange={handleNameChange}
 				id="name"
 				name="name"
-				className="contact-form__input"
+				value={values.name}
+				onChange={handleChange}
+				onBlur={() => setIsNameTouched(true)}
+				className={`contact-form__input ${
+					isNameTouched && errors.name !== '' && 'contact-form__input_error'
+				}`}
 				placeholder="Name"
 				required
 			/>
+			<span className="contact-form__span-error">
+				{isEmailTouched && errors.email !== '' && errors.email}
+			</span>
 			<input
-				type="text"
-				value={email ?? ''}
-				onChange={handleEmailChange}
+				type="email"
 				id="email"
 				name="email"
-				className="contact-form__input"
+				value={values.email}
+				onChange={handleChange}
+				onBlur={() => setIsEmailTouched(true)}
+				className={`contact-form__input ${
+					isEmailTouched && errors.email !== '' && 'contact-form__input_error'
+				}`}
 				placeholder="Email"
 				required
 			/>
+			<span className="contact-form__span-error">
+				{isMessageTouched && errors.message !== '' && errors.message}
+			</span>
 			<textarea
-				type="message"
-				rows={10}
-				value={message ?? ''}
-				onChange={handleMessageChange}
 				id="message"
 				name="message"
-				className="contact-form__message"
+				rows={10}
+				value={values.message}
+				onChange={handleChange}
+				onBlur={() => setIsMessageTouched(true)}
+				className={`contact-form__message ${
+					isMessageTouched &&
+					errors.message !== '' &&
+					'contact-form__message_error'
+				}`}
 				placeholder="Type your message here"
 				required
 			/>
-			<Button text={`Submit`} />
+			<Button text={`Submit`} isDisabled={!isValid} />
 		</form>
 	);
 };
