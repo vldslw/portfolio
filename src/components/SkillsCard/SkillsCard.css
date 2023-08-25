@@ -1,0 +1,58 @@
+.skills-card {
+	display: flex;
+}
+
+.skills-card__image {
+	width: 50px;
+	height: 50px;
+	margin-right: 54px;
+	flex-shrink: 0;
+}
+
+.skills-card:nth-child(1n) > .skills-card__image {
+	background-color: #2f80ed;
+	border-radius: 0;
+}
+
+.skills-card:nth-child(2n) > .skills-card__image {
+	background-color: #ff6250;
+	border-radius: 50%;
+}
+
+.skills-card:nth-child(3n) > .skills-card__image {
+	background-color: #f3afa8;
+	border-radius: 50% 50% 0 0;
+}
+
+.skills-card:nth-child(4n) > .skills-card__image {
+	background-color: #f7d684;
+	border-radius: 100% 0 0;
+}
+
+.skills-card__title {
+	margin: 0;
+	font-family: 'Sofia Sans';
+	font-size: 27px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 42px;
+}
+
+.skills-card__text {
+	margin: 16px 0 0;
+	font-family: 'Golos Text';
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+@media screen and (max-width: 418px) {
+	.skills-card {
+		flex-direction: column;
+	}
+
+	.skills-card__image {
+		margin-bottom: 25px;
+	}
+}

@@ -1,0 +1,88 @@
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 80px;
+}
+
+.contact-form__input {
+	min-width: 530px;
+	outline: none;
+	border: 0;
+	background-color: #f3f3f3;
+	padding: 24px 33px 19px;
+	margin: 0;
+	font-family: 'Golos Text';
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px;
+	border: 1px solid #f3f3f3;
+}
+
+.contact-form__input_error {
+	border: 1px solid #f3afa8;
+}
+
+.contact-form__span-error {
+	min-height: 16px;
+	padding: 4px 0 2px;
+	color: #ff6250;
+	font-family: 'Golos Text';
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.contact-form__message {
+	min-width: 530px;
+	outline: none;
+	border: 0;
+	background-color: #f3f3f3;
+	padding: 33px 33px 28px;
+	margin: 0 0 44px;
+	font-family: 'Golos Text';
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px;
+	border: 1px solid #f3f3f3;
+}
+
+.contact-form__message_error {
+	border: 1px solid #f3afa8;
+}
+
+@media screen and (max-width: 1238px) {
+	.contact-form__input {
+		min-width: 430px;
+	}
+	.contact-form__message {
+		min-width: 430px;
+	}
+}
+
+@media screen and (max-width: 1138px) {
+	.contact-form__input {
+		min-width: 330px;
+	}
+	.contact-form__message {
+		min-width: 330px;
+	}
+}
+
+@media screen and (max-width: 1038px) {
+	.contact-form {
+		margin-left: 0;
+		margin-top: 70px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contact-form__input {
+		min-width: 0;
+	}
+	.contact-form__message {
+		min-width: 0;
+	}
+}

@@ -1,0 +1,218 @@
+.cover {
+	padding: 78px 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cover__desc-subhead {
+	margin: 32px 0;
+	max-width: 244px;
+	font-family: 'Sofia Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.cover__desc-head {
+	margin: 42px 0;
+	max-width: 380px;
+	font-family: 'Sofia Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 100px;
+}
+
+.cover__desc-text {
+	margin: 42px 0 75px;
+	max-width: 402px;
+	font-family: 'Golos Text';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 27px;
+}
+
+.cover__pic-block {
+	position: relative;
+	width: 410px;
+	height: 550px;
+	margin-left: 80px;
+}
+
+.cover__pic {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 410px;
+	height: 550px;
+	object-fit: cover;
+	border-radius: 205px 205px 0px 0px;
+}
+
+.cover__rec {
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	z-index: 2;
+}
+
+.cover__rec_top {
+	background-color: #ff6250;
+	right: 0;
+	top: -20px;
+	border-radius: 50%;
+}
+
+.cover__rec_bottom {
+	background-color: #f7d684;
+	left: -63px;
+	top: 350px;
+}
+
+.cover__rotator {
+	position: absolute;
+	background-color: #2f80ed;
+	height: 300px;
+	width: 300px;
+	z-index: 0;
+	top: 260px;
+	left: -10px;
+	animation: rotation 30s linear infinite;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media screen and (min-width: 1282px) {
+	.cover {
+		padding: 78px 200px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.cover__pic-block {
+		margin-left: 70px;
+	}
+
+	.cover__desc-text {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 1038px) {
+	.cover__pic-block {
+		margin-top: 80px;
+		width: 268px;
+		height: 360px;
+		margin-left: 0;
+	}
+
+	.cover__pic {
+		width: 268px;
+		height: 360px;
+		border-radius: 205px 205px 0px 0px;
+	}
+
+	.cover__rec {
+		width: 85px;
+		height: 85px;
+	}
+
+	.cover__rec_top {
+		right: -16px;
+		top: -20px;
+	}
+
+	.cover__rec_bottom {
+		left: -12px;
+		top: 250px;
+	}
+
+	.cover__rotator {
+		height: 150px;
+		width: 150px;
+		top: 216px;
+	}
+
+	.cover__desc-head {
+		font-size: 68px;
+		max-width: 300px;
+	}
+
+	.cover__desc-text {
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.cover {
+		padding: 78px 50px;
+	}
+
+	.cover__desc-text {
+		max-width: 260px;
+	}
+
+	.cover__pic-block {
+		margin: 80px auto 0;
+	}
+}
+
+@media screen and (max-width: 670px) {
+	.cover {
+		flex-direction: column;
+	}
+
+	.cover__desc-text {
+		max-width: 402px;
+	}
+}
+
+@media screen and (max-width: 418px) {
+	.cover {
+		padding: 45px 28px 33px;
+		flex-direction: column;
+	}
+
+	.cover__desc-block {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.cover__desc-head {
+		margin: 0 0 20px;
+		text-align: center;
+		font-weight: 900;
+		max-width: 100%;
+	}
+
+	.cover__desc-subhead {
+		margin: 0 0 24px;
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.cover__desc-text {
+		text-align: center;
+		max-width: 100%;
+	}
+
+	.cover__pic-block {
+		margin: 80px auto 0;
+		width: 268px;
+		height: 360px;
+	}
+
+	.cover__pic {
+		width: 268px;
+		height: 360px;
+	}
+}
