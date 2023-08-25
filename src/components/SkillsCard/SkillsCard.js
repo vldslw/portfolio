@@ -1,6 +1,6 @@
 import './SkillsCard.css';
 
-export const SkillsCard = ({ title, text, color }) => {
+export const SkillsCard = ({ title, text }) => {
 	return (
 		<article className="skills-card">
 			<div className="skills-card__image"></div>

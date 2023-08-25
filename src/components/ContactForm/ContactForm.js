@@ -10,7 +10,6 @@ export const ContactForm = () => {
 	const [isNameTouched, setIsNameTouched] = useState(false);
 	const [isEmailTouched, setIsEmailTouched] = useState(false);
 	const [isMessageTouched, setIsMessageTouched] = useState(false);
-	const [isButtonTouched, setIsButtonTouched] = useState(false);
 
 	function handleSubmit(e) {
 		e.preventDefault();
