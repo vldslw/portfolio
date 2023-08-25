@@ -52,3 +52,37 @@
 .contact-form__message_error {
 	border: 1px solid #f3afa8;
 }
+
+@media screen and (max-width: 1238px) {
+	.contact-form__input {
+		min-width: 430px;
+	}
+	.contact-form__message {
+		min-width: 430px;
+	}
+}
+
+@media screen and (max-width: 1138px) {
+	.contact-form__input {
+		min-width: 330px;
+	}
+	.contact-form__message {
+		min-width: 330px;
+	}
+}
+
+@media screen and (max-width: 1038px) {
+	.contact-form {
+		margin-left: 0;
+		margin-top: 70px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contact-form__input {
+		min-width: 0;
+	}
+	.contact-form__message {
+		min-width: 0;
+	}
+}
