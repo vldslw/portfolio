@@ -46,3 +46,13 @@
 	font-weight: 400;
 	line-height: 27px;
 }
+
+@media screen and (max-width: 418px) {
+	.skills-card {
+		flex-direction: column;
+	}
+
+	.skills-card__image {
+		margin-bottom: 25px;
+	}
+}

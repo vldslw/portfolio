@@ -8,7 +8,7 @@ import mongo from './images/mongo.svg';
 
 export const Stack = () => {
 	return (
-		<section className="stack">
+		<section id="stack" className="stack">
 			<img src={javaScript} className="stack__icon" alt="JavaScript" />
 			<img src={react} className="stack__icon" alt="React" />
 			<img src={node} className="stack__icon" alt="Node.js" />

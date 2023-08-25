@@ -74,7 +74,7 @@ export const ContactForm = () => {
 				placeholder="Type your message here"
 				required
 			/>
-			<Button text={`Submit`} isDisabled={!isValid} />
+			<Button text={`Submit`} isDisabled={!isValid} modifier={'footer'} />
 		</form>
 	);
 };

@@ -7,7 +7,7 @@ import russianTravel from './images/russianTravel.png';
 
 export const Projects = () => {
 	return (
-		<section className="projects">
+		<section id="projects" className="projects">
 			<h2 className="projects__title">Latest projects</h2>
 			<div className="projects__cards">
 				<ProjectsCard

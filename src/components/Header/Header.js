@@ -8,15 +8,15 @@ export const Header = () => {
 				vldslw
 			</Link>
 			<nav className="header__nav">
-				<Link to="/" className="header__nav-link">
+				<a href="#stack" className="header__nav-link">
 					About
-				</Link>
-				<Link to="/" className="header__nav-link">
+				</a>
+				<a href="#projects" className="header__nav-link">
 					Work
-				</Link>
-				<Link to="/" className="header__nav-link">
+				</a>
+				<a href="#footer" className="header__nav-link">
 					Contact
-				</Link>
+				</a>
 			</nav>
 		</header>
 	);
