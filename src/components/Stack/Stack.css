@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 65px 100px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .stack__icon {

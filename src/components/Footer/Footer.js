@@ -4,11 +4,15 @@ import linkedInIcon from './icons/linkedin.svg';
 import telegramIcon from './icons/telegram.svg';
 import instagramIcon from './icons/instagram.svg';
 import { ContactForm } from '../ContactForm/ContactForm';
+import curriculumPdf from '../../utils/data/resume.pdf';
 
 export const Footer = () => {
 	function downloadCurriculum(e) {
 		e.preventDefault();
-		window.open('https://github.com/vldslw');
+		const link = document.createElement('a');
+		link.download = 'Resume-Vladislav-Pavlov';
+		link.href = curriculumPdf;
+		link.click();
 	}
 
 	return (

@@ -4,7 +4,13 @@ import './Header.css';
 export const Header = () => {
 	return (
 		<header className="header">
-			<Link to="/" className="header__logo">
+			<Link
+				to="/"
+				onClick={() => {
+					window.location.href = '/';
+				}}
+				className="header__logo"
+			>
 				vldslw
 			</Link>
 			<nav className="header__nav">
