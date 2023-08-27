@@ -9,10 +9,7 @@ import curriculumPdf from '../../utils/data/resume.pdf';
 export const Footer = () => {
 	function downloadCurriculum(e) {
 		e.preventDefault();
-		const link = document.createElement('a');
-		link.download = 'Resume-Vladislav-Pavlov';
-		link.href = curriculumPdf;
-		link.click();
+		window.open(curriculumPdf);
 	}
 
 	return (
