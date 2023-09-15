@@ -2,10 +2,10 @@ export const skillsData = [
 	{
 		id: 1,
 		title: 'Skillset',
-		text: `I'm fluent with React, JavaScript, TypeScript, HTML, CSS. 
+		text: `I'm fluent with React, JavaScript, TypeScript, HTML, CSS, Vue.js. 
     I also have experience with backend development in Node.js / MongoDB. 
     I have completed the Web Development career path at Practicum by Yandex and I continue to learn new technologies. 
-    Right now I’m taking a course on Vue.js, deepening my knowledge of TypeScript and React.`,
+    Right now I’m learning React Native, deepening my knowledge of Redux and Sass.`,
 	},
 	{
 		id: 2,

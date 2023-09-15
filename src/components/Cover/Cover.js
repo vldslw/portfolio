@@ -14,7 +14,7 @@ export const Cover = () => {
 				<h2 className="cover__desc-subhead">Web Development</h2>
 				<h1 className="cover__desc-head">Vladislav Pavlov</h1>
 				<p className="cover__desc-text">
-					Frontend Developer with experience in the media JavaScript | React
+					Frontend Developer with experience in the media JavaScript | React | Vue.js
 				</p>
 				<Button text={'My GitHub'} handleClick={handleButtonClick} />
 			</div>
