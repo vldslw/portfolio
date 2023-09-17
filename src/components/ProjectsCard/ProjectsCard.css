@@ -7,10 +7,39 @@
 
 .projects-card__image {
 	width: 100%;
+	object-fit: cover;
 }
 
 .projects-card__link {
+	width: 100%;
+	height: 61%;
 	text-decoration: none;
+	line-height: 0;
+}
+
+.projects-card__desc {
+	padding: 50px 20px 20px 45px;
+}
+
+.projects-card__desc-lower {
+	display: flex;
+	justify-content: space-between;
+}
+
+.projects-card__git-link {
+	margin-left: 20px;
+	align-self: flex-end;
+	line-height: 0;
+}
+
+.projects-card__git-link:hover {
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.projects-card__git-image {
+	width: 36px;
+	height: 37px;
 }
 
 .projects-card__link:hover {
@@ -19,12 +48,8 @@
 	transition: opacity 0.3s;
 }
 
-.projects-card__desc {
-	padding: 50px 45px 20px;
-}
-
 .projects-card__title {
-	margin: 0 0 12px;
+	margin: 0 25px 12px 0;
 	font-family: 'Sofia Sans';
 	font-size: 32px;
 	font-style: normal;

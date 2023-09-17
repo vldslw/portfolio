@@ -5,11 +5,17 @@ import telegramIcon from './icons/telegram.svg';
 import instagramIcon from './icons/instagram.svg';
 import { ContactForm } from '../ContactForm/ContactForm';
 import curriculumPdf from '../../utils/data/resume.pdf';
+import curriculumRuPdf from '../../utils/data/resumeRU.pdf';
 
 export const Footer = () => {
 	function downloadCurriculum(e) {
 		e.preventDefault();
 		window.open(curriculumPdf);
+	}
+
+	function downloadCurriculumRu(e) {
+		e.preventDefault();
+		window.open(curriculumRuPdf);
 	}
 
 	return (
