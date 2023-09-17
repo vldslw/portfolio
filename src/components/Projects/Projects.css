@@ -20,6 +20,41 @@
 	grid-template-columns: 1fr 1fr;
 }
 
+.projects-cards__portfolio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20% 45px;
+}
+
+.projects-cards__portfolio-link {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #2f80ed;
+}
+
+.projects-cards__portfolio-link:hover {
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.projects-cards__portfolio-text {
+	text-align: center;
+	font-family: 'Golos Text';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.projects-cards__portfolio-image {
+	width: 76px;
+	height: 76px;
+}
+
 @media screen and (min-width: 1282px) {
 	.projects {
 		padding: 0 200px 85px;
@@ -49,3 +84,5 @@
 		grid-template-columns: 1fr;
 	} */
 }
+
+
