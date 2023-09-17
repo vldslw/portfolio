@@ -5,6 +5,7 @@ import mesto from './images/mesto.png';
 import learnToLearn from './images/learnToLearn.png';
 import russianTravel from './images/russianTravel.png';
 import tzeezotje from './images/tzeezotje.png';
+import gitHubLogo from './images/github.svg';
 
 export const Projects = () => {
 	return (
@@ -46,6 +47,17 @@ export const Projects = () => {
 					projectLink={'https://vldslw.github.io/how-to-learn'}
 					gitHubLink={'https://github.com/vldslw/how-to-learn'}
 				/>
+				<article className="projects-cards__portfolio">
+						<a
+							href='https://github.com/vldslw/portfolio'
+							className="projects-cards__portfolio-link"
+							target="_blank"
+							rel="noreferrer"
+						>
+							<img className="projects-cards__portfolio-image" src={gitHubLogo} alt='GitHub logo' />
+							<p className="projects-cards__portfolio-text">Link to this portfolio website repository →</p>
+						</a>
+				</article>
 			</div>
 		</section>
 	);
