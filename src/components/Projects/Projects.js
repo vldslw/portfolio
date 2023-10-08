@@ -5,6 +5,7 @@ import mesto from './images/mesto.png';
 import learnToLearn from './images/learnToLearn.png';
 import russianTravel from './images/russianTravel.png';
 import tzeezotje from './images/tzeezotje.png';
+import easyfit from './images/easyfit.png';
 import gitHubLogo from './images/github.svg';
 
 export const Projects = () => {
@@ -12,6 +13,13 @@ export const Projects = () => {
 		<section id="projects" className="projects">
 			<h2 className="projects__title">Some of my projects</h2>
 			<div className="projects__cards">
+				<ProjectsCard
+					title={`EasyFit`}
+					text={'React, TypeScript, Redux, Sass'}
+					imgUrl={easyfit}
+					projectLink={'https://easyfit.space/'}
+					gitHubLink={'https://github.com/easyfit-organization/'}
+				/>
 				<ProjectsCard
 					title={`Bistrot 't Zeezotje`}
 					text={'HTML, CSS, JavaScript, React'}
