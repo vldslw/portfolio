@@ -72,7 +72,7 @@ export const Footer = () => {
 						</li>
 						<li className="footer__link">
 							<a
-								href="https://www.instagram.com/pavlov.vld"
+								href="https://www.instagram.com/vladislavpavlov.foto"
 								className="footer__link-url"
 								target="_blank"
 								rel="noreferrer"
