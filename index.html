@@ -3,10 +3,188 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Vladislav Pavlov</title>
     <link href="/src/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <div></div>
+  <body class="font-golos">
+    <div class="min-w-2xs max-w-7xl mx-auto">
+      <header class="px-12 lg:px-24 py-10 lg:py-20">
+        <nav class="flex justify-between">
+          <h1>
+            <a
+              href="/"
+              class="font-sofia font-bold text-xl hover-opacity cursor-pointer"
+            >
+              vldslw
+            </a>
+          </h1>
+          <ul class="font-golos flex">
+            <li class="ml-8 text-lg font-normal hover-opacity">
+              <a href="/">About</a>
+            </li>
+            <li class="ml-8 text-lg font-normal hover-opacity">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section
+          class="flex flex-col sm:flex-row justify-center gap-12 px-12 lg:px-24 py-10 lg:py-20"
+        >
+          <div class="flex flex-col gap-6 justify-end sm:max-w-60 lg:max-w-100">
+            <h2 class="font-sofia text-4xl sm:text-3xl lg:text-5xl font-bold">
+              Hi! My name is <br />
+              Vlad. <br />
+              I'm a
+              <a
+                href="https://github.com/vldslw"
+                class="link hover-opacity"
+                target="_blank"
+                >Software Engineer</a
+              >, an
+              <a
+                href="https://www.linkedin.com/in/vldslw/"
+                class="link hover-opacity"
+                target="_blank"
+                >EdTech Specialist</a
+              >, and a
+              <a
+                href="https://www.instagram.com/vladpavlov.photo/"
+                class="link hover-opacity"
+                target="_blank"
+                >photographer</a
+              >.
+            </h2>
+            <ul class="flex gap-2">
+              <li
+                class="rounded-full cursor-pointer hover-opacity flex items-center justify-center"
+              >
+                <a
+                  href="https://github.com/vldslw"
+                  target="_blank"
+                  class="flex items-center justify-center"
+                  aria-label="GitHub profile"
+                >
+                  <img src="/github.svg" alt="GitHub icon" class="w-14 h-14" />
+                </a>
+              </li>
+              <li
+                class="rounded-full cursor-pointer hover-opacity flex items-center justify-center"
+              >
+                <a
+                  href="https://www.linkedin.com/in/vldslw/"
+                  target="_blank"
+                  class="flex items-center justify-center"
+                  aria-label="LinkedIn profile"
+                >
+                  <img
+                    src="/linkedin.svg"
+                    alt="LinkedIn icon"
+                    class="w-14 h-14"
+                  />
+                </a>
+              </li>
+              <li
+                class="rounded-full cursor-pointer hover-opacity flex items-center justify-center"
+              >
+                <a
+                  href="https://www.instagram.com/vladpavlov.photo/"
+                  target="_blank"
+                  class="flex items-center justify-center"
+                  aria-label="Instagram profile"
+                >
+                  <img
+                    src="/instagram.svg"
+                    alt="Instagram icon"
+                    class="w-14 h-14"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img
+              src="/profile-photo.png"
+              alt="Vladislav Pavlov's photo"
+              class="sm:w-60 sm:rounded-full lg:rounded-none lg:h-120 lg:w-96 object-cover"
+            />
+          </div>
+        </section>
+        <section
+          id="contact"
+          class="flex flex-col md:flex-row justify-center gap-12 md:gap-24 px-12 md:px-24 py-10 lg:py-20"
+        >
+          <div>
+            <h3 class="font-sofia font-bold text-2xl lg:text-4xl mt-8">
+              Let's get in touch!
+            </h3>
+            <p class="font-golos max-w-100 my-8">
+              If you have an idea for collaboration <br />
+              or a project, I'd be happy to hear from you.
+            </p>
+            <ul>
+              <li class="flex gap-2 text-lg">
+                <img src="/location.svg" alt="Location icon" /><span
+                  >Buenos Aires, Argentina</span
+                >
+              </li>
+              <li class="text-lg">
+                <a
+                  href="https://t.me/vldslw"
+                  target="_blank"
+                  class="link hover-opacity flex gap-2"
+                  ><img src="/send.svg" alt="Telegram icon" /><span
+                    >@vldslw</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+          <form
+            id="contact-form"
+            name="contact-form"
+            class="flex flex-col grow"
+          >
+            <span class="h-8"></span>
+            <input
+              name="name"
+              id="name"
+              type="text"
+              placeholder="Name"
+              class="form-input"
+              required
+            />
+
+            <span class="h-8"></span>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="Email"
+              class="form-input"
+              required
+            />
+
+            <span class="h-8"></span>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Type your message here"
+              rows="8"
+              class="form-input"
+              required
+            ></textarea>
+
+            <button type="submit" class="button mt-8 max-w-60 hover-opacity">
+              Submit
+            </button>
+          </form>
+        </section>
+      </main>
+      <footer class="flex justify-center py-8 px-16">
+        <p class="font-golos text-gray-600">&copy; Vladislav Pavlov</p>
+      </footer>
+    </div>
   </body>
 </html>
